@@ -1,0 +1,550 @@
+
+##############################################################################
+# П.2 Побудова RDF-графу та серіалізація
+##############################################################################
+Екземпляри за типами:
+  mo:Actor       30
+  mo:Film        15
+  mo:Studio      14
+  mo:Genre       10
+  mo:Country     9
+  mo:Director    7
+Унікальних екземплярів: 85
+Типів зв'язків між сутностями: 7 -> mo:basedIn, mo:bornIn, mo:directedBy, mo:hasActor, mo:hasGenre, mo:producedBy, mo:producedIn
+Всього трійок: 532
+Збережено: movies.ttl, movies.jsonld, movies.nt, movies.rdf у /Users/maksymdubovyk/SemanticWeb/Lab1/output
+
+##############################################################################
+# П.2 Візуалізація
+##############################################################################
+Збережено graph_full.png: 85 вузлів, 184 ребер
+Збережено graph_nolan.png: 31 вузлів, 48 ребер
+
+##############################################################################
+# П.3 Робота з RDF-графом
+##############################################################################
+
+==============================================================================
+1. Читання Turtle-файлу output/movies.ttl
+==============================================================================
+Прочитано трійок: 532
+
+==============================================================================
+2. Вручну змінений файл movies_edited.ttl — що змінилося
+==============================================================================
+Трійок до змін: 532, після змін: 557
+
+Додані трійки (26):
+  film:Inception  rdfs:comment  "A thief who steals corporate secrets through dream-sharing technology."@en .
+  film:Tenet  mo:directedBy  person:ChristopherNolan .
+  film:Tenet  mo:hasActor  person:JohnDavidWashington .
+  film:Tenet  mo:hasActor  person:RobertPattinson .
+  film:Tenet  mo:hasGenre  genre:Action .
+  film:Tenet  mo:hasGenre  genre:SciFi .
+  film:Tenet  mo:imdbRating  "7.3"^^xsd:decimal .
+  film:Tenet  mo:producedBy  studio:Syncopy .
+  film:Tenet  mo:producedBy  studio:WarnerBros .
+  film:Tenet  mo:producedIn  country:UK .
+  film:Tenet  mo:producedIn  country:USA .
+  film:Tenet  mo:releaseYear  "2020"^^xsd:integer .
+  film:Tenet  mo:runtimeMinutes  "150"^^xsd:integer .
+  film:Tenet  dcterms:title  "Tenet"@en .
+  film:Tenet  rdf:type  mo:Film .
+  film:TheDarkKnight  mo:imdbRating  "9.1"^^xsd:decimal .
+  person:JohnDavidWashington  mo:birthYear  "1984"^^xsd:integer .
+  person:JohnDavidWashington  mo:bornIn  country:USA .
+  person:JohnDavidWashington  rdf:type  mo:Actor .
+  person:JohnDavidWashington  rdf:type  foaf:Person .
+  person:JohnDavidWashington  foaf:name  "John David Washington" .
+  person:RobertPattinson  mo:birthYear  "1986"^^xsd:integer .
+  person:RobertPattinson  mo:bornIn  country:UK .
+  person:RobertPattinson  rdf:type  mo:Actor .
+  person:RobertPattinson  rdf:type  foaf:Person .
+  person:RobertPattinson  foaf:name  "Robert Pattinson" .
+
+Видалені трійки (1):
+  film:TheDarkKnight  mo:imdbRating  "9.0"^^xsd:decimal .
+
+==============================================================================
+3а. Усі трійки з предикатом mo:directedBy (фільм -> режисер)
+==============================================================================
+  film:Amelie  mo:directedBy  person:JeanPierreJeunet .
+  film:Arrival  mo:directedBy  person:DenisVilleneuve .
+  film:Barbie  mo:directedBy  person:GretaGerwig .
+  film:BladeRunner2049  mo:directedBy  person:DenisVilleneuve .
+  film:Dune  mo:directedBy  person:DenisVilleneuve .
+  film:DunePartTwo  mo:directedBy  person:DenisVilleneuve .
+  film:Inception  mo:directedBy  person:ChristopherNolan .
+  film:Interstellar  mo:directedBy  person:ChristopherNolan .
+  film:KillersOfTheFlowerMoon  mo:directedBy  person:MartinScorsese .
+  film:LaLaLand  mo:directedBy  person:DamienChazelle .
+  film:LittleWomen  mo:directedBy  person:GretaGerwig .
+  film:Oppenheimer  mo:directedBy  person:ChristopherNolan .
+  film:Parasite  mo:directedBy  person:BongJoonHo .
+  film:Tenet  mo:directedBy  person:ChristopherNolan .
+  film:TheDarkKnight  mo:directedBy  person:ChristopherNolan .
+  film:TheWolfOfWallStreet  mo:directedBy  person:MartinScorsese .
+
+==============================================================================
+3б. Перші 15 трійок графу (у відсортованому порядку)
+==============================================================================
+  country:Australia  rdf:type  mo:Country .
+  country:Australia  rdfs:label  "Australia"@en .
+  country:Canada  rdf:type  mo:Country .
+  country:Canada  rdfs:label  "Canada"@en .
+  country:France  rdf:type  mo:Country .
+  country:France  rdfs:label  "France"@en .
+  country:Ireland  rdf:type  mo:Country .
+  country:Ireland  rdfs:label  "Ireland"@en .
+  country:Italy  rdf:type  mo:Country .
+  country:Italy  rdfs:label  "Italy"@en .
+  country:SouthKorea  rdf:type  mo:Country .
+  country:SouthKorea  rdfs:label  "South Korea"@en .
+  country:Sweden  rdf:type  mo:Country .
+  country:Sweden  rdfs:label  "Sweden"@en .
+  country:UK  rdf:type  mo:Country .
+  ... (ще 542)
+
+==============================================================================
+4а. Трійки, де film:Inception є суб'єктом
+==============================================================================
+  film:Inception  mo:directedBy  person:ChristopherNolan .
+  film:Inception  mo:hasActor  person:JosephGordonLevitt .
+  film:Inception  mo:hasActor  person:LeonardoDiCaprio .
+  film:Inception  mo:hasActor  person:TomHardy .
+  film:Inception  mo:hasGenre  genre:Action .
+  film:Inception  mo:hasGenre  genre:SciFi .
+  film:Inception  mo:hasGenre  genre:Thriller .
+  film:Inception  mo:imdbRating  "8.8"^^xsd:decimal .
+  film:Inception  mo:producedBy  studio:Legendary .
+  film:Inception  mo:producedBy  studio:Syncopy .
+  film:Inception  mo:producedBy  studio:WarnerBros .
+  film:Inception  mo:producedIn  country:UK .
+  film:Inception  mo:producedIn  country:USA .
+  film:Inception  mo:releaseYear  "2010"^^xsd:integer .
+  film:Inception  mo:runtimeMinutes  "148"^^xsd:integer .
+  film:Inception  dcterms:title  "Inception"@en .
+  film:Inception  rdf:type  mo:Film .
+  film:Inception  rdfs:comment  "A thief who steals corporate secrets through dream-sharing technology."@en .
+
+==============================================================================
+4б. Трійки, де person:LeonardoDiCaprio є суб'єктом або об'єктом
+==============================================================================
+  film:Inception  mo:hasActor  person:LeonardoDiCaprio .
+  film:KillersOfTheFlowerMoon  mo:hasActor  person:LeonardoDiCaprio .
+  film:TheWolfOfWallStreet  mo:hasActor  person:LeonardoDiCaprio .
+  person:LeonardoDiCaprio  mo:birthYear  "1974"^^xsd:integer .
+  person:LeonardoDiCaprio  mo:bornIn  country:USA .
+  person:LeonardoDiCaprio  rdf:type  mo:Actor .
+  person:LeonardoDiCaprio  rdf:type  foaf:Person .
+  person:LeonardoDiCaprio  foaf:name  "Leonardo DiCaprio" .
+
+==============================================================================
+4в. Опис нового фільму film:Tenet (з ручних змін) через g.predicate_objects()
+==============================================================================
+  mo:directedBy        person:ChristopherNolan
+  mo:hasActor          person:JohnDavidWashington
+  mo:hasActor          person:RobertPattinson
+  mo:hasGenre          genre:Action
+  mo:hasGenre          genre:SciFi
+  mo:imdbRating        "7.3"^^xsd:decimal
+  mo:producedBy        studio:Syncopy
+  mo:producedBy        studio:WarnerBros
+  mo:producedIn        country:UK
+  mo:producedIn        country:USA
+  mo:releaseYear       "2020"^^xsd:integer
+  mo:runtimeMinutes    "150"^^xsd:integer
+  dcterms:title        "Tenet"@en
+  rdf:type             mo:Film
+
+==============================================================================
+5. Порівняння серіалізацій (Turtle / JSON-LD / N-Triples / RDF/XML)
+==============================================================================
+  movies.jsonld  трійок: 532  ізоморфний Turtle-графу: True
+  movies.nt      трійок: 532  ізоморфний Turtle-графу: True
+  movies.rdf     трійок: 532  ізоморфний Turtle-графу: True
+
+Типів у графі: rdf:type mo:Film -> 16 фільмів
+
+##############################################################################
+# П.4 SPARQL-запити
+##############################################################################
+Граф: movies_edited.ttl, трійок: 557
+
+==============================================================================
+Q1. Які фільми зняв Крістофер Нолан?
+Демонструє: зв'язок Film → Director, ORDER BY
+==============================================================================
+SELECT ?title ?year WHERE {
+  ?film a mo:Film ;
+        dcterms:title ?title ;
+        mo:releaseYear ?year ;
+        mo:directedBy person:ChristopherNolan .
+}
+ORDER BY ?year
+
+title           | year
+----------------------
+The Dark Knight | 2008
+Inception       | 2010
+Interstellar    | 2014
+Tenet           | 2020
+Oppenheimer     | 2023
+(5 рядків)
+
+==============================================================================
+Q2. Які фільми вийшли після 2020 року і хто їх режисер?
+Демонструє: FILTER, ORDER BY, зв'язок Film → Director
+==============================================================================
+SELECT ?title ?year ?director WHERE {
+  ?film a mo:Film ;
+        dcterms:title ?title ;
+        mo:releaseYear ?year ;
+        mo:directedBy ?d .
+  ?d foaf:name ?director .
+  FILTER (?year > 2020)
+}
+ORDER BY DESC(?year) ?title
+
+title                      | year | director         
+-----------------------------------------------------
+Dune: Part Two             | 2024 | Denis Villeneuve 
+Barbie                     | 2023 | Greta Gerwig     
+Killers of the Flower Moon | 2023 | Martin Scorsese  
+Oppenheimer                | 2023 | Christopher Nolan
+Dune                       | 2021 | Denis Villeneuve 
+(5 рядків)
+
+==============================================================================
+Q3. Який режисер має найбільше фільмів у графі (і який у нього середній рейтинг)?
+Демонструє: агрегатні функції COUNT, AVG, GROUP BY, ORDER BY
+==============================================================================
+SELECT ?director (COUNT(?film) AS ?films) (ROUND(AVG(?rating) * 100) / 100 AS ?avgRating) WHERE {
+  ?film a mo:Film ;
+        mo:directedBy ?d ;
+        mo:imdbRating ?rating .
+  ?d foaf:name ?director .
+}
+GROUP BY ?director
+ORDER BY DESC(?films) DESC(?avgRating)
+
+director           | films | avgRating
+--------------------------------------
+Christopher Nolan  | 5     | 8.44     
+Denis Villeneuve   | 4     | 8.1      
+Martin Scorsese    | 2     | 7.9      
+Greta Gerwig       | 2     | 7.3      
+Bong Joon-ho       | 1     | 8.5      
+Jean-Pierre Jeunet | 1     | 8.3      
+Damien Chazelle    | 1     | 8        
+(7 рядків)
+
+==============================================================================
+Q4. Які актори брали участь у фільмах жанру «Science Fiction»?
+Демонструє: зв'язки між різними типами сутностей Actor ← Film → Genre, GROUP_CONCAT
+==============================================================================
+SELECT ?actor (GROUP_CONCAT(?title; separator=", ") AS ?films) WHERE {
+  ?film mo:hasGenre ?genre ;
+        mo:hasActor ?a ;
+        dcterms:title ?title .
+  ?genre rdfs:label "Science Fiction"@en .
+  ?a foaf:name ?actor .
+}
+GROUP BY ?actor
+ORDER BY ?actor
+
+actor                 | films               
+--------------------------------------------
+Amy Adams             | Arrival             
+Anne Hathaway         | Interstellar        
+Austin Butler         | Dune: Part Two      
+Harrison Ford         | Blade Runner 2049   
+Jeremy Renner         | Arrival             
+Jessica Chastain      | Interstellar        
+John David Washington | Tenet               
+Joseph Gordon-Levitt  | Inception           
+Leonardo DiCaprio     | Inception           
+Matthew McConaughey   | Interstellar        
+Rebecca Ferguson      | Dune, Dune: Part Two
+Robert Pattinson      | Tenet               
+Ryan Gosling          | Blade Runner 2049   
+Timothée Chalamet     | Dune, Dune: Part Two
+Tom Hardy             | Inception           
+Zendaya               | Dune, Dune: Part Two
+(16 рядків)
+
+==============================================================================
+Q5. Які актори, народжені НЕ у США, грали у фільмах режисерів, народжених у Великій Британії?
+Демонструє: перехід через 3 зв'язки: Actor ←hasActor— Film —directedBy→ Director —bornIn→ Country; FILTER
+==============================================================================
+SELECT DISTINCT ?actor ?actorCountry ?title ?director WHERE {
+  ?film mo:hasActor ?a ;                 # зв'язок 1
+        mo:directedBy ?d ;               # зв'язок 2
+        dcterms:title ?title .
+  ?d mo:bornIn country:UK ;              # зв'язок 3
+     foaf:name ?director .
+  ?a foaf:name ?actor ;
+     mo:bornIn ?c .
+  ?c rdfs:label ?actorCountry .
+  FILTER (?c != country:USA)
+}
+ORDER BY ?actor ?title
+
+actor            | actorCountry   | title           | director         
+-----------------------------------------------------------------------
+Christian Bale   | United Kingdom | The Dark Knight | Christopher Nolan
+Cillian Murphy   | Ireland        | Oppenheimer     | Christopher Nolan
+Emily Blunt      | United Kingdom | Oppenheimer     | Christopher Nolan
+Heath Ledger     | Australia      | The Dark Knight | Christopher Nolan
+Robert Pattinson | United Kingdom | Tenet           | Christopher Nolan
+Tom Hardy        | United Kingdom | Inception       | Christopher Nolan
+(6 рядків)
+
+==============================================================================
+Q6. Середній, мінімальний і максимальний рейтинг та середня тривалість фільмів за жанрами
+Демонструє: AVG, MIN, MAX, COUNT, HAVING
+==============================================================================
+SELECT ?genreName (COUNT(?film) AS ?films)
+       (ROUND(AVG(?rating) * 100) / 100 AS ?avgRating)
+       (MIN(?rating) AS ?minRating) (MAX(?rating) AS ?maxRating)
+       (ROUND(AVG(?runtime)) AS ?avgRuntime) WHERE {
+  ?film mo:hasGenre ?g ;
+        mo:imdbRating ?rating ;
+        mo:runtimeMinutes ?runtime .
+  ?g rdfs:label ?genreName .
+}
+GROUP BY ?genreName
+HAVING (COUNT(?film) >= 3)
+ORDER BY DESC(?avgRating)
+
+genreName       | films | avgRating | minRating | maxRating | avgRuntime
+------------------------------------------------------------------------
+Thriller        | 4     | 8.6       | 8.0       | 9.1       | 149       
+Action          | 3     | 8.4       | 7.3       | 9.1       | 150       
+Adventure       | 3     | 8.4       | 8.0       | 8.7       | 163       
+Crime           | 3     | 8.3       | 7.6       | 9.1       | 179       
+Science Fiction | 7     | 8.17      | 7.3       | 8.8       | 152       
+Drama           | 7     | 8.11      | 7.6       | 8.7       | 152       
+Romance         | 3     | 8.03      | 7.8       | 8.3       | 128       
+Comedy          | 4     | 7.95      | 6.8       | 8.5       | 137       
+(8 рядків)
+
+==============================================================================
+Q7. Які актори знімалися у кількох фільмах графу і в яких режисерів?
+Демонструє: COUNT + HAVING, зв'язки Actor ← Film → Director
+==============================================================================
+SELECT ?actor (COUNT(DISTINCT ?film) AS ?films)
+       (GROUP_CONCAT(DISTINCT ?director; separator=", ") AS ?directors) WHERE {
+  ?film mo:hasActor ?a ;
+        mo:directedBy ?d .
+  ?a foaf:name ?actor .
+  ?d foaf:name ?director .
+}
+GROUP BY ?actor
+HAVING (COUNT(DISTINCT ?film) > 1)
+ORDER BY DESC(?films) ?actor
+
+actor             | films | directors                                      
+---------------------------------------------------------------------------
+Leonardo DiCaprio | 3     | Christopher Nolan, Martin Scorsese             
+Ryan Gosling      | 3     | Denis Villeneuve, Greta Gerwig, Damien Chazelle
+Timothée Chalamet | 3     | Denis Villeneuve, Greta Gerwig                 
+Margot Robbie     | 2     | Greta Gerwig, Martin Scorsese                  
+Rebecca Ferguson  | 2     | Denis Villeneuve                               
+Zendaya           | 2     | Denis Villeneuve                               
+(6 рядків)
+
+==============================================================================
+Q8. Які фільми знято студіями, що базуються поза США, і в якій країні ці студії?
+Демонструє: зв'язки Film → Studio → Country, FILTER NOT EXISTS
+==============================================================================
+SELECT ?title ?studioName ?countryName WHERE {
+  ?film dcterms:title ?title ;
+        mo:producedBy ?studio .
+  ?studio rdfs:label ?studioName ;
+          mo:basedIn ?c .
+  ?c rdfs:label ?countryName .
+  FILTER NOT EXISTS { ?studio mo:basedIn country:USA }
+}
+ORDER BY ?countryName ?title
+
+title           | studioName                 | countryName   
+-------------------------------------------------------------
+Amélie          | Claudie Ossard Productions | France        
+Parasite        | Barunson E&A               | South Korea   
+Barbie          | Heyday Films               | United Kingdom
+Inception       | Syncopy                    | United Kingdom
+Interstellar    | Syncopy                    | United Kingdom
+Oppenheimer     | Syncopy                    | United Kingdom
+Tenet           | Syncopy                    | United Kingdom
+The Dark Knight | Syncopy                    | United Kingdom
+(8 рядків)
+
+Збережено /Users/maksymdubovyk/SemanticWeb/Lab1/output/query_results.md
+
+##############################################################################
+# П.5 Поєднання з Wikidata
+##############################################################################
+Додано зв'язків із Wikidata: 42
+  film:Inception owl:sameAs <http://www.wikidata.org/entity/Q25188> .
+  person:ChristopherNolan owl:sameAs <http://www.wikidata.org/entity/Q25191> .
+  genre:SciFi skos:exactMatch <http://www.wikidata.org/entity/Q471839> .
+Збережено /Users/maksymdubovyk/SemanticWeb/Lab1/output/movies_linked.ttl (599 трійок)
+
+Перевірка відповідності назв у власному графі та Wikidata:
+Перевірено зв'язків: 42; розбіжностей у назвах: 0
+
+==============================================================================
+F1. Місто та дата народження режисерів (Wikidata) і кількість їхніх фільмів у власному графі
+==============================================================================
+SELECT ?director (COUNT(DISTINCT ?film) AS ?films) ?birthDate
+       (GROUP_CONCAT(DISTINCT ?placeName; separator=" / ") AS ?birthPlace) WHERE {
+  ?film mo:directedBy ?d .                # власний граф
+  ?d foaf:name ?director ;
+     owl:sameAs ?wd .                     # зв'язок із Wikidata
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wd wdt:P569 ?birthDate ;             # дата народження
+        wdt:P19 ?place .                  # місце народження
+    ?place rdfs:label ?placeName .
+    FILTER (LANG(?placeName) = "en")
+  }
+}
+GROUP BY ?director ?birthDate
+ORDER BY DESC(?films) ?director
+
+director           | films | birthDate                 | birthPlace                  
+-------------------------------------------------------------------------------------
+Christopher Nolan  | 5     | 1970-07-30T00:00:00+00:00 | London / City of Westminster
+Denis Villeneuve   | 4     | 1967-10-03T00:00:00+00:00 | Bécancour                   
+Greta Gerwig       | 2     | 1983-08-04T00:00:00+00:00 | Sacramento                  
+Martin Scorsese    | 2     | 1942-11-17T00:00:00+00:00 | Queens                      
+Bong Joon-ho       | 1     | 1969-09-14T00:00:00+00:00 | Daegu                       
+Damien Chazelle    | 1     | 1985-01-19T00:00:00+00:00 | Providence                  
+Jean-Pierre Jeunet | 1     | 1953-09-03T00:00:00+00:00 | Le Coteau                   
+(7 рядків)
+
+==============================================================================
+F2. Фільми з рейтингом ≥ 8.0 (власний граф): кількість нагород і бюджет (Wikidata)
+==============================================================================
+SELECT ?title ?rating (COUNT(DISTINCT ?award) AS ?awards) (MAX(?budget) AS ?budgetUSD) WHERE {
+  ?film dcterms:title ?title ;            # власний граф
+        mo:imdbRating ?rating ;
+        owl:sameAs ?wd .
+  FILTER (?rating >= 8.0)
+  SERVICE <https://query.wikidata.org/sparql> {
+    OPTIONAL { ?wd wdt:P166 ?award . }  # нагороди
+    OPTIONAL { ?wd wdt:P2130 ?budget . } # бюджет
+  }
+}
+GROUP BY ?title ?rating
+ORDER BY DESC(?awards)
+
+title                   | rating | awards | budgetUSD
+-----------------------------------------------------
+Parasite                | 8.5    | 14     | 13200000 
+La La Land              | 8.0    | 13     | 30000000 
+Amélie                  | 8.3    | 10     | 10000000 
+Inception               | 8.8    | 7      | 160000000
+Oppenheimer             | 8.3    | 6      | 100000000
+The Dark Knight         | 9.1    | 4      | 185000000
+Blade Runner 2049       | 8.0    | 3      | 150000000
+Dune                    | 8.0    | 3      | 165000000
+Dune: Part Two          | 8.5    | 2      | 190000000
+Interstellar            | 8.7    | 2      | 165000000
+The Wolf of Wall Street | 8.2    | 1      | 100000000
+(11 рядків)
+
+==============================================================================
+F3. Звірка даних: тривалість фільму у власному графі та у Wikidata (P2047, нормалізовано)
+==============================================================================
+SELECT DISTINCT ?title ?ourRuntime ?wdRuntime (?ourRuntime - ?wdRuntime AS ?diff) WHERE {
+  ?film dcterms:title ?title ;
+        mo:runtimeMinutes ?ourRuntime ;
+        owl:sameAs ?wd .
+  SERVICE <https://query.wikidata.org/sparql> {
+    # нормалізоване значення (завжди в секундах), а не wdt:P2047 «як введено»
+    ?wd p:P2047/psn:P2047/wikibase:quantityAmount ?seconds .
+  }
+  BIND (ROUND(?seconds / 60) AS ?wdRuntime)
+}
+ORDER BY ?title
+
+title                      | ourRuntime | wdRuntime | diff
+----------------------------------------------------------
+Amélie                     | 122        | 122       | 0   
+Arrival                    | 116        | 116       | 0   
+Barbie                     | 114        | 114       | 0   
+Blade Runner 2049          | 163        | 164       | -1  
+Dune                       | 155        | 155       | 0   
+Dune: Part Two             | 166        | 165       | 1   
+Inception                  | 148        | 148       | 0   
+Interstellar               | 169        | 169       | 0   
+Killers of the Flower Moon | 206        | 206       | 0   
+La La Land                 | 128        | 128       | 0   
+Little Women               | 135        | 134       | 1   
+Oppenheimer                | 180        | 180       | 0   
+Parasite                   | 132        | 132       | 0   
+Tenet                      | 150        | 150       | 0   
+The Dark Knight            | 152        | 153       | -1  
+The Wolf of Wall Street    | 180        | 180       | 0   
+(16 рядків)
+
+Збережено /Users/maksymdubovyk/SemanticWeb/Lab1/output/federated_results.md
+
+##############################################################################
+# П.6 Помилкові та виправлені приклади
+##############################################################################
+
+==============================================================================
+E1. Синтаксична помилка в Turtle
+==============================================================================
+Помилковий Turtle:
+@prefix mo: <http://example.org/movies/ontology#> .
+@prefix film: <http://example.org/movies/film/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+film:Tenet a mo:Film ;
+    dcterms:title "Tenet"@en ;
+    mo:releaseYear 2020
+film:Dune a mo:Film .
+
+-> ОЧІКУВАНА помилка розбору (так і має бути): BadSyntax: at line 6 of <>:
+
+Виправлений Turtle (додано @prefix dcterms і крапку після 2020):
+@prefix mo: <http://example.org/movies/ontology#> .
+@prefix film: <http://example.org/movies/film/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+film:Tenet a mo:Film ;
+    dcterms:title "Tenet"@en ;
+    mo:releaseYear 2020 .
+film:Dune a mo:Film .
+
+-> розібрано успішно, трійок: 4
+
+==============================================================================
+E2. Рік як рядок замість xsd:integer
+==============================================================================
+Помилково (рядки)          FILTER (?year > 2020) -> ['Amelie', 'Barbie', 'Dune', 'Tenet']
+Виправлено (xsd:integer)   FILTER (?year > 2020) -> ['Barbie', 'Dune']
+Причина: "2023" — рядок (xsd:string), тож числового порівняння немає. За специфікацією SPARQL
+це помилка типу, а RDFLib впорядковує значення різних типів і вважає будь-який рядок
+«більшим» за число — тому у вибірку потрапляють навіть Tenet (2020) та Amélie (2001).
+
+==============================================================================
+E3. Літерал без мовного тегу не дорівнює літералу з тегом @en
+==============================================================================
+Помилково            SELECT ?film WHERE { ?film mo:hasGenre ?g . ?g rdfs:label "Science Fiction" . }
+                     -> 0 рядків
+Виправлено (@en)     SELECT ?film WHERE { ?film mo:hasGenre ?g . ?g rdfs:label "Science Fiction"@en . }
+                     -> 7 рядків
+Виправлено (STR())   SELECT ?film WHERE { ?film mo:hasGenre ?g . ?g rdfs:label ?l . FILTER (STR(?l) = "Science Fiction") }
+                     -> 7 рядків
+
+==============================================================================
+E4. Wikidata: одиниці вимірювання тривалості (P2047)
+==============================================================================
+Помилково (wdt:P2047)        -> [('Inception', '148'), ('Oppenheimer', '10809')]
+Виправлено (psn:P2047 / 60)  -> [('Inception', '148'), ('Oppenheimer', '180')]
+Причина: wdt: повертає лише число «як введено»; для Oppenheimer одне з тверджень записане в секундах (10809 s), тож без урахування одиниць отримуємо хибне значення.

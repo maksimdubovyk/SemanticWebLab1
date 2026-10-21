@@ -1,0 +1,720 @@
+@prefix country: <http://example.org/movies/country/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix film: <http://example.org/movies/film/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix genre: <http://example.org/movies/genre/> .
+@prefix mo: <http://example.org/movies/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://example.org/movies/person/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix studio: <http://example.org/movies/studio/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+film:Amelie a mo:Film ;
+    mo:directedBy person:JeanPierreJeunet ;
+    mo:hasActor person:AudreyTautou ;
+    mo:hasGenre genre:Comedy,
+        genre:Romance ;
+    mo:imdbRating 8.3 ;
+    mo:producedBy studio:ClaudieOssard ;
+    mo:producedIn country:France ;
+    mo:releaseYear 2001 ;
+    mo:runtimeMinutes 122 ;
+    dcterms:title "Amélie"@en ;
+    owl:sameAs wd:Q484048 .
+
+film:Arrival a mo:Film ;
+    mo:directedBy person:DenisVilleneuve ;
+    mo:hasActor person:AmyAdams,
+        person:JeremyRenner ;
+    mo:hasGenre genre:Drama,
+        genre:SciFi ;
+    mo:imdbRating 7.9 ;
+    mo:producedBy studio:FilmNation ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2016 ;
+    mo:runtimeMinutes 116 ;
+    dcterms:title "Arrival"@en ;
+    owl:sameAs wd:Q20382729 .
+
+film:Barbie a mo:Film ;
+    mo:directedBy person:GretaGerwig ;
+    mo:hasActor person:MargotRobbie,
+        person:RyanGosling ;
+    mo:hasGenre genre:Comedy ;
+    mo:imdbRating 6.8 ;
+    mo:producedBy studio:Heyday ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2023 ;
+    mo:runtimeMinutes 114 ;
+    dcterms:title "Barbie"@en ;
+    owl:sameAs wd:Q55436290 .
+
+film:BladeRunner2049 a mo:Film ;
+    mo:directedBy person:DenisVilleneuve ;
+    mo:hasActor person:HarrisonFord,
+        person:RyanGosling ;
+    mo:hasGenre genre:SciFi,
+        genre:Thriller ;
+    mo:imdbRating 8.0 ;
+    mo:producedBy studio:Alcon,
+        studio:Columbia ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2017 ;
+    mo:runtimeMinutes 163 ;
+    dcterms:title "Blade Runner 2049"@en ;
+    owl:sameAs wd:Q21500755 .
+
+film:Dune a mo:Film ;
+    mo:directedBy person:DenisVilleneuve ;
+    mo:hasActor person:RebeccaFerguson,
+        person:TimotheeChalamet,
+        person:Zendaya ;
+    mo:hasGenre genre:Adventure,
+        genre:SciFi ;
+    mo:imdbRating 8.0 ;
+    mo:producedBy studio:Legendary ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2021 ;
+    mo:runtimeMinutes 155 ;
+    dcterms:title "Dune"@en ;
+    owl:sameAs wd:Q60834962 .
+
+film:DunePartTwo a mo:Film ;
+    mo:directedBy person:DenisVilleneuve ;
+    mo:hasActor person:AustinButler,
+        person:RebeccaFerguson,
+        person:TimotheeChalamet,
+        person:Zendaya ;
+    mo:hasGenre genre:Adventure,
+        genre:SciFi ;
+    mo:imdbRating 8.5 ;
+    mo:producedBy studio:Legendary ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2024 ;
+    mo:runtimeMinutes 166 ;
+    dcterms:title "Dune: Part Two"@en ;
+    owl:sameAs wd:Q109228991 .
+
+film:Inception a mo:Film ;
+    mo:directedBy person:ChristopherNolan ;
+    mo:hasActor person:JosephGordonLevitt,
+        person:LeonardoDiCaprio,
+        person:TomHardy ;
+    mo:hasGenre genre:Action,
+        genre:SciFi,
+        genre:Thriller ;
+    mo:imdbRating 8.8 ;
+    mo:producedBy studio:Legendary,
+        studio:Syncopy,
+        studio:WarnerBros ;
+    mo:producedIn country:UK,
+        country:USA ;
+    mo:releaseYear 2010 ;
+    mo:runtimeMinutes 148 ;
+    dcterms:title "Inception"@en ;
+    rdfs:comment "A thief who steals corporate secrets through dream-sharing technology."@en ;
+    owl:sameAs wd:Q25188 .
+
+film:Interstellar a mo:Film ;
+    mo:directedBy person:ChristopherNolan ;
+    mo:hasActor person:AnneHathaway,
+        person:JessicaChastain,
+        person:MatthewMcConaughey ;
+    mo:hasGenre genre:Adventure,
+        genre:Drama,
+        genre:SciFi ;
+    mo:imdbRating 8.7 ;
+    mo:producedBy studio:Legendary,
+        studio:Paramount,
+        studio:Syncopy,
+        studio:WarnerBros ;
+    mo:producedIn country:UK,
+        country:USA ;
+    mo:releaseYear 2014 ;
+    mo:runtimeMinutes 169 ;
+    dcterms:title "Interstellar"@en ;
+    owl:sameAs wd:Q13417189 .
+
+film:KillersOfTheFlowerMoon a mo:Film ;
+    mo:directedBy person:MartinScorsese ;
+    mo:hasActor person:LeonardoDiCaprio,
+        person:LilyGladstone,
+        person:RobertDeNiro ;
+    mo:hasGenre genre:Crime,
+        genre:Drama ;
+    mo:imdbRating 7.6 ;
+    mo:producedBy studio:AppianWay,
+        studio:AppleStudios ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2023 ;
+    mo:runtimeMinutes 206 ;
+    dcterms:title "Killers of the Flower Moon"@en ;
+    owl:sameAs wd:Q66316924 .
+
+film:LaLaLand a mo:Film ;
+    mo:directedBy person:DamienChazelle ;
+    mo:hasActor person:EmmaStone,
+        person:RyanGosling ;
+    mo:hasGenre genre:Drama,
+        genre:Musical,
+        genre:Romance ;
+    mo:imdbRating 8.0 ;
+    mo:producedBy studio:Summit ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2016 ;
+    mo:runtimeMinutes 128 ;
+    dcterms:title "La La Land"@en ;
+    owl:sameAs wd:Q20856802 .
+
+film:LittleWomen a mo:Film ;
+    mo:directedBy person:GretaGerwig ;
+    mo:hasActor person:FlorencePugh,
+        person:SaoirseRonan,
+        person:TimotheeChalamet ;
+    mo:hasGenre genre:Drama,
+        genre:Romance ;
+    mo:imdbRating 7.8 ;
+    mo:producedBy studio:Columbia ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2019 ;
+    mo:runtimeMinutes 135 ;
+    dcterms:title "Little Women"@en ;
+    owl:sameAs wd:Q56881140 .
+
+film:Oppenheimer a mo:Film ;
+    mo:directedBy person:ChristopherNolan ;
+    mo:hasActor person:CillianMurphy,
+        person:EmilyBlunt,
+        person:MattDamon,
+        person:RobertDowneyJr ;
+    mo:hasGenre genre:Biographical,
+        genre:Drama ;
+    mo:imdbRating 8.3 ;
+    mo:producedBy studio:Atlas,
+        studio:Syncopy ;
+    mo:producedIn country:UK,
+        country:USA ;
+    mo:releaseYear 2023 ;
+    mo:runtimeMinutes 180 ;
+    dcterms:title "Oppenheimer"@en ;
+    owl:sameAs wd:Q108839994 .
+
+film:Parasite a mo:Film ;
+    mo:directedBy person:BongJoonHo ;
+    mo:hasActor person:ChoiWooShik,
+        person:SongKangHo ;
+    mo:hasGenre genre:Comedy,
+        genre:Drama,
+        genre:Thriller ;
+    mo:imdbRating 8.5 ;
+    mo:producedBy studio:Barunson ;
+    mo:producedIn country:SouthKorea ;
+    mo:releaseYear 2019 ;
+    mo:runtimeMinutes 132 ;
+    dcterms:title "Parasite"@en ;
+    owl:sameAs wd:Q61448040 .
+
+film:Tenet a mo:Film ;
+    mo:directedBy person:ChristopherNolan ;
+    mo:hasActor person:JohnDavidWashington,
+        person:RobertPattinson ;
+    mo:hasGenre genre:Action,
+        genre:SciFi ;
+    mo:imdbRating 7.3 ;
+    mo:producedBy studio:Syncopy,
+        studio:WarnerBros ;
+    mo:producedIn country:UK,
+        country:USA ;
+    mo:releaseYear 2020 ;
+    mo:runtimeMinutes 150 ;
+    dcterms:title "Tenet"@en ;
+    owl:sameAs wd:Q63985561 .
+
+film:TheDarkKnight a mo:Film ;
+    mo:directedBy person:ChristopherNolan ;
+    mo:hasActor person:ChristianBale,
+        person:HeathLedger ;
+    mo:hasGenre genre:Action,
+        genre:Crime,
+        genre:Thriller ;
+    mo:imdbRating 9.1 ;
+    mo:producedBy studio:Legendary,
+        studio:Syncopy,
+        studio:WarnerBros ;
+    mo:producedIn country:UK,
+        country:USA ;
+    mo:releaseYear 2008 ;
+    mo:runtimeMinutes 152 ;
+    dcterms:title "The Dark Knight"@en ;
+    owl:sameAs wd:Q163872 .
+
+film:TheWolfOfWallStreet a mo:Film ;
+    mo:directedBy person:MartinScorsese ;
+    mo:hasActor person:JonahHill,
+        person:LeonardoDiCaprio,
+        person:MargotRobbie ;
+    mo:hasGenre genre:Biographical,
+        genre:Comedy,
+        genre:Crime ;
+    mo:imdbRating 8.2 ;
+    mo:producedBy studio:AppianWay ;
+    mo:producedIn country:USA ;
+    mo:releaseYear 2013 ;
+    mo:runtimeMinutes 180 ;
+    dcterms:title "The Wolf of Wall Street"@en ;
+    owl:sameAs wd:Q1392744 .
+
+mo:basedIn a owl:ObjectProperty ;
+    rdfs:domain mo:Studio ;
+    rdfs:range mo:Country .
+
+mo:birthYear a owl:DatatypeProperty ;
+    rdfs:domain mo:Person ;
+    rdfs:range xsd:integer .
+
+mo:bornIn a owl:ObjectProperty ;
+    rdfs:domain mo:Person ;
+    rdfs:range mo:Country .
+
+mo:directedBy a owl:ObjectProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range mo:Director ;
+    rdfs:subPropertyOf schema:director .
+
+mo:hasActor a owl:ObjectProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range mo:Actor ;
+    rdfs:subPropertyOf schema:actor .
+
+mo:hasGenre a owl:ObjectProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range mo:Genre ;
+    rdfs:subPropertyOf schema:genre .
+
+mo:imdbRating a owl:DatatypeProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range xsd:decimal .
+
+mo:producedBy a owl:ObjectProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range mo:Studio ;
+    rdfs:subPropertyOf schema:productionCompany .
+
+mo:producedIn a owl:ObjectProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range mo:Country ;
+    rdfs:subPropertyOf schema:countryOfOrigin .
+
+mo:releaseYear a owl:DatatypeProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range xsd:integer .
+
+mo:runtimeMinutes a owl:DatatypeProperty ;
+    rdfs:domain mo:Film ;
+    rdfs:range xsd:integer .
+
+country:Ireland a mo:Country ;
+    rdfs:label "Ireland"@en ;
+    owl:sameAs wd:Q27 .
+
+country:Italy a mo:Country ;
+    rdfs:label "Italy"@en ;
+    owl:sameAs wd:Q38 .
+
+country:Sweden a mo:Country ;
+    rdfs:label "Sweden"@en ;
+    owl:sameAs wd:Q34 .
+
+genre:Musical a mo:Genre ;
+    rdfs:label "Musical"@en ;
+    skos:exactMatch wd:Q842256 .
+
+person:AmyAdams a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1974 ;
+    mo:bornIn country:Italy ;
+    foaf:name "Amy Adams" .
+
+person:AnneHathaway a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1982 ;
+    mo:bornIn country:USA ;
+    foaf:name "Anne Hathaway" .
+
+person:AudreyTautou a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1976 ;
+    mo:bornIn country:France ;
+    foaf:name "Audrey Tautou" .
+
+person:AustinButler a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1991 ;
+    mo:bornIn country:USA ;
+    foaf:name "Austin Butler" .
+
+person:BongJoonHo a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1969 ;
+    mo:bornIn country:SouthKorea ;
+    owl:sameAs wd:Q495980 ;
+    foaf:name "Bong Joon-ho" .
+
+person:ChoiWooShik a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1990 ;
+    mo:bornIn country:SouthKorea ;
+    foaf:name "Choi Woo-shik" .
+
+person:ChristianBale a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1974 ;
+    mo:bornIn country:UK ;
+    foaf:name "Christian Bale" .
+
+person:CillianMurphy a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1976 ;
+    mo:bornIn country:Ireland ;
+    foaf:name "Cillian Murphy" .
+
+person:DamienChazelle a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1985 ;
+    mo:bornIn country:USA ;
+    owl:sameAs wd:Q18350026 ;
+    foaf:name "Damien Chazelle" .
+
+person:EmilyBlunt a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1983 ;
+    mo:bornIn country:UK ;
+    foaf:name "Emily Blunt" .
+
+person:EmmaStone a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1988 ;
+    mo:bornIn country:USA ;
+    foaf:name "Emma Stone" .
+
+person:FlorencePugh a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1996 ;
+    mo:bornIn country:UK ;
+    foaf:name "Florence Pugh" .
+
+person:HarrisonFord a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1942 ;
+    mo:bornIn country:USA ;
+    foaf:name "Harrison Ford" .
+
+person:HeathLedger a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1979 ;
+    mo:bornIn country:Australia ;
+    foaf:name "Heath Ledger" .
+
+person:JeanPierreJeunet a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1953 ;
+    mo:bornIn country:France ;
+    owl:sameAs wd:Q217324 ;
+    foaf:name "Jean-Pierre Jeunet" .
+
+person:JeremyRenner a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1971 ;
+    mo:bornIn country:USA ;
+    foaf:name "Jeremy Renner" .
+
+person:JessicaChastain a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1977 ;
+    mo:bornIn country:USA ;
+    foaf:name "Jessica Chastain" .
+
+person:JohnDavidWashington a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1984 ;
+    mo:bornIn country:USA ;
+    foaf:name "John David Washington" .
+
+person:JonahHill a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1983 ;
+    mo:bornIn country:USA ;
+    foaf:name "Jonah Hill" .
+
+person:JosephGordonLevitt a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1981 ;
+    mo:bornIn country:USA ;
+    foaf:name "Joseph Gordon-Levitt" .
+
+person:LilyGladstone a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1986 ;
+    mo:bornIn country:USA ;
+    foaf:name "Lily Gladstone" .
+
+person:MattDamon a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1970 ;
+    mo:bornIn country:USA ;
+    foaf:name "Matt Damon" .
+
+person:MatthewMcConaughey a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1969 ;
+    mo:bornIn country:USA ;
+    foaf:name "Matthew McConaughey" .
+
+person:RobertDeNiro a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1943 ;
+    mo:bornIn country:USA ;
+    foaf:name "Robert De Niro" .
+
+person:RobertDowneyJr a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1965 ;
+    mo:bornIn country:USA ;
+    foaf:name "Robert Downey Jr." .
+
+person:RobertPattinson a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1986 ;
+    mo:bornIn country:UK ;
+    foaf:name "Robert Pattinson" .
+
+person:SaoirseRonan a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1994 ;
+    mo:bornIn country:USA ;
+    foaf:name "Saoirse Ronan" .
+
+person:SongKangHo a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1967 ;
+    mo:bornIn country:SouthKorea ;
+    foaf:name "Song Kang-ho" .
+
+person:TomHardy a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1977 ;
+    mo:bornIn country:UK ;
+    foaf:name "Tom Hardy" .
+
+studio:Alcon a mo:Studio ;
+    rdfs:label "Alcon Entertainment" ;
+    mo:basedIn country:USA .
+
+studio:AppleStudios a mo:Studio ;
+    rdfs:label "Apple Studios" ;
+    mo:basedIn country:USA .
+
+studio:Atlas a mo:Studio ;
+    rdfs:label "Atlas Entertainment" ;
+    mo:basedIn country:USA .
+
+studio:Barunson a mo:Studio ;
+    rdfs:label "Barunson E&A" ;
+    mo:basedIn country:SouthKorea .
+
+studio:ClaudieOssard a mo:Studio ;
+    rdfs:label "Claudie Ossard Productions" ;
+    mo:basedIn country:France .
+
+studio:FilmNation a mo:Studio ;
+    rdfs:label "FilmNation Entertainment" ;
+    mo:basedIn country:USA .
+
+studio:Heyday a mo:Studio ;
+    rdfs:label "Heyday Films" ;
+    mo:basedIn country:UK .
+
+studio:Paramount a mo:Studio ;
+    rdfs:label "Paramount Pictures" ;
+    mo:basedIn country:USA .
+
+studio:Summit a mo:Studio ;
+    rdfs:label "Summit Entertainment" ;
+    mo:basedIn country:USA .
+
+country:Australia a mo:Country ;
+    rdfs:label "Australia"@en ;
+    owl:sameAs wd:Q408 .
+
+country:Canada a mo:Country ;
+    rdfs:label "Canada"@en ;
+    owl:sameAs wd:Q16 .
+
+genre:Biographical a mo:Genre ;
+    rdfs:label "Biographical"@en ;
+    skos:exactMatch wd:Q645928 .
+
+person:GretaGerwig a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1983 ;
+    mo:bornIn country:USA ;
+    owl:sameAs wd:Q271967 ;
+    foaf:name "Greta Gerwig" .
+
+person:MargotRobbie a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1990 ;
+    mo:bornIn country:Australia ;
+    foaf:name "Margot Robbie" .
+
+person:MartinScorsese a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1942 ;
+    mo:bornIn country:USA ;
+    owl:sameAs wd:Q41148 ;
+    foaf:name "Martin Scorsese" .
+
+person:RebeccaFerguson a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1983 ;
+    mo:bornIn country:Sweden ;
+    foaf:name "Rebecca Ferguson" .
+
+person:Zendaya a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1996 ;
+    mo:bornIn country:USA ;
+    foaf:name "Zendaya" .
+
+studio:AppianWay a mo:Studio ;
+    rdfs:label "Appian Way" ;
+    mo:basedIn country:USA .
+
+studio:Columbia a mo:Studio ;
+    rdfs:label "Columbia Pictures" ;
+    mo:basedIn country:USA .
+
+genre:Action a mo:Genre ;
+    rdfs:label "Action"@en ;
+    skos:exactMatch wd:Q188473 .
+
+genre:Adventure a mo:Genre ;
+    rdfs:label "Adventure"@en ;
+    skos:exactMatch wd:Q319221 .
+
+genre:Crime a mo:Genre ;
+    rdfs:label "Crime"@en ;
+    skos:exactMatch wd:Q959790 .
+
+genre:Romance a mo:Genre ;
+    rdfs:label "Romance"@en ;
+    skos:exactMatch wd:Q1054574 .
+
+person:LeonardoDiCaprio a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1974 ;
+    mo:bornIn country:USA ;
+    foaf:name "Leonardo DiCaprio" .
+
+person:RyanGosling a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1980 ;
+    mo:bornIn country:Canada ;
+    foaf:name "Ryan Gosling" .
+
+person:TimotheeChalamet a mo:Actor,
+        foaf:Person ;
+    mo:birthYear 1995 ;
+    mo:bornIn country:USA ;
+    foaf:name "Timothée Chalamet" .
+
+country:France a mo:Country ;
+    rdfs:label "France"@en ;
+    owl:sameAs wd:Q142 .
+
+genre:Comedy a mo:Genre ;
+    rdfs:label "Comedy"@en ;
+    skos:exactMatch wd:Q157443 .
+
+genre:Thriller a mo:Genre ;
+    rdfs:label "Thriller"@en ;
+    skos:exactMatch wd:Q2484376 .
+
+mo:Person a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf foaf:Person .
+
+person:DenisVilleneuve a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1967 ;
+    mo:bornIn country:Canada ;
+    owl:sameAs wd:Q548823 ;
+    foaf:name "Denis Villeneuve" .
+
+studio:WarnerBros a mo:Studio ;
+    rdfs:label "Warner Bros. Pictures" ;
+    mo:basedIn country:USA .
+
+country:SouthKorea a mo:Country ;
+    rdfs:label "South Korea"@en ;
+    owl:sameAs wd:Q884 .
+
+person:ChristopherNolan a mo:Director,
+        foaf:Person ;
+    mo:birthYear 1970 ;
+    mo:bornIn country:UK ;
+    owl:sameAs wd:Q25191 ;
+    foaf:name "Christopher Nolan" .
+
+studio:Legendary a mo:Studio ;
+    rdfs:label "Legendary Pictures" ;
+    mo:basedIn country:USA .
+
+studio:Syncopy a mo:Studio ;
+    rdfs:label "Syncopy" ;
+    mo:basedIn country:UK .
+
+genre:Drama a mo:Genre ;
+    rdfs:label "Drama"@en ;
+    skos:exactMatch wd:Q130232 .
+
+genre:SciFi a mo:Genre ;
+    rdfs:label "Science Fiction"@en ;
+    skos:exactMatch wd:Q471839 .
+
+mo:Director a owl:Class ;
+    rdfs:label "Director"@en ;
+    rdfs:subClassOf mo:Person .
+
+mo:Genre a owl:Class ;
+    rdfs:label "Genre"@en ;
+    rdfs:subClassOf schema:Thing .
+
+mo:Country a owl:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:subClassOf schema:Country .
+
+country:UK a mo:Country ;
+    rdfs:label "United Kingdom"@en ;
+    owl:sameAs wd:Q145 .
+
+mo:Studio a owl:Class ;
+    rdfs:label "Studio"@en ;
+    rdfs:subClassOf schema:Organization .
+
+mo:Film a owl:Class ;
+    rdfs:label "Film"@en ;
+    rdfs:subClassOf schema:Movie .
+
+mo:Actor a owl:Class ;
+    rdfs:label "Actor"@en ;
+    rdfs:subClassOf mo:Person .
+
+country:USA a mo:Country ;
+    rdfs:label "United States"@en ;
+    owl:sameAs wd:Q30 .
+

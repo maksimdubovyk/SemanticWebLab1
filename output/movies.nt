@@ -1,0 +1,532 @@
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/JessicaChastain> .
+<http://example.org/movies/film/Interstellar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/GretaGerwig> .
+<http://example.org/movies/person/AustinButler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/MattDamon> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Adventure> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Comedy> .
+<http://example.org/movies/studio/Alcon> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/HarrisonFord> <http://xmlns.com/foaf/0.1/name> "Harrison Ford" .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#releaseYear> "2016"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/AmyAdams> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#imdbRating> "7.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/JonahHill> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/genre/Biographical> <http://www.w3.org/2000/01/rdf-schema#label> "Biographical"@en .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/TimotheeChalamet> .
+<http://example.org/movies/person/CillianMurphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/JeanPierreJeunet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/JosephGordonLevitt> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/RobertDowneyJr> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RyanGosling> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/ChristopherNolan> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/TimotheeChalamet> .
+<http://example.org/movies/person/FlorencePugh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/ChoiWooShik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/HeathLedger> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#releaseYear> "2023"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#imdbRating> "8.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/MattDamon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/EmmaStone> <http://example.org/movies/ontology#birthYear> "1988"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/AnneHathaway> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/person/RobertDowneyJr> <http://example.org/movies/ontology#birthYear> "1965"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/MatthewMcConaughey> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#imdbRating> "9.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/genre/Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/person/TomHardy> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/JonahHill> .
+<http://example.org/movies/person/AudreyTautou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/HarrisonFord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/LaLaLand> <http://purl.org/dc/terms/title> "La La Land"@en .
+<http://example.org/movies/person/AmyAdams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Action> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#releaseYear> "2010"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/person/EmilyBlunt> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/studio/Atlas> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/EmilyBlunt> <http://xmlns.com/foaf/0.1/name> "Emily Blunt" .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Action> .
+<http://example.org/movies/country/Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/country/Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#runtimeMinutes> "114"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/country/SouthKorea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/ontology#directedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/film/Amelie> <http://purl.org/dc/terms/title> "Amélie"@en .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Musical> .
+<http://example.org/movies/person/DamienChazelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/studio/Columbia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/person/AustinButler> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/country/Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/film/Dune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Crime> .
+<http://example.org/movies/person/AnneHathaway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/ChristopherNolan> .
+<http://example.org/movies/person/AmyAdams> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Italy> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/DenisVilleneuve> .
+<http://example.org/movies/film/Barbie> <http://purl.org/dc/terms/title> "Barbie"@en .
+<http://example.org/movies/person/ChoiWooShik> <http://example.org/movies/ontology#birthYear> "1990"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/Zendaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/CillianMurphy> <http://example.org/movies/ontology#birthYear> "1976"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RebeccaFerguson> .
+<http://example.org/movies/ontology#runtimeMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/movies/studio/AppianWay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/ontology#Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre"@en .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Romance> .
+<http://example.org/movies/person/MartinScorsese> <http://xmlns.com/foaf/0.1/name> "Martin Scorsese" .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#runtimeMinutes> "206"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#basedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/person/EmmaStone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/RebeccaFerguson> <http://example.org/movies/ontology#birthYear> "1983"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/MartinScorsese> <http://example.org/movies/ontology#birthYear> "1942"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/Zendaya> <http://example.org/movies/ontology#birthYear> "1996"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#Studio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Organization> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#releaseYear> "2024"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/JonahHill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/RobertDowneyJr> <http://xmlns.com/foaf/0.1/name> "Robert Downey Jr." .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/ontology#runtimeMinutes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Thriller> .
+<http://example.org/movies/person/SongKangHo> <http://example.org/movies/ontology#birthYear> "1967"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/GretaGerwig> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/AudreyTautou> <http://example.org/movies/ontology#birthYear> "1976"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/AppleStudios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#imdbRating> "8.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#releaseYear> "2023"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/HarrisonFord> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/SongKangHo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/CillianMurphy> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Ireland> .
+<http://example.org/movies/person/SaoirseRonan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#imdbRating> "8.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/MatthewMcConaughey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/genre/Romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Romance> .
+<http://example.org/movies/studio/Heyday> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/studio/Paramount> <http://www.w3.org/2000/01/rdf-schema#label> "Paramount Pictures" .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Legendary> .
+<http://example.org/movies/ontology#producedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/countryOfOrigin> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/ClaudieOssard> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Alcon> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#runtimeMinutes> "135"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#imdbRating> "8.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/JosephGordonLevitt> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#runtimeMinutes> "148"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Inception> <http://purl.org/dc/terms/title> "Inception"@en .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Biographical> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/AppleStudios> .
+<http://example.org/movies/ontology#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Country> .
+<http://example.org/movies/ontology#Film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/person/AustinButler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#imdbRating> "8.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/ontology#birthYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Person> .
+<http://example.org/movies/studio/Heyday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/person/DenisVilleneuve> <http://xmlns.com/foaf/0.1/name> "Denis Villeneuve" .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Barunson> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#imdbRating> "7.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/DamienChazelle> <http://xmlns.com/foaf/0.1/name> "Damien Chazelle" .
+<http://example.org/movies/person/RobertDeNiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/EmmaStone> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#runtimeMinutes> "122"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/MargotRobbie> <http://example.org/movies/ontology#birthYear> "1990"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/ChristianBale> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#runtimeMinutes> "132"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/movies/ontology#Person> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/CillianMurphy> <http://xmlns.com/foaf/0.1/name> "Cillian Murphy" .
+<http://example.org/movies/person/GretaGerwig> <http://example.org/movies/ontology#birthYear> "1983"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#releaseYear> "2001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Arrival> <http://purl.org/dc/terms/title> "Arrival"@en .
+<http://example.org/movies/person/DamienChazelle> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/genre/Thriller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/person/JessicaChastain> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/GretaGerwig> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/AppianWay> .
+<http://example.org/movies/person/DamienChazelle> <http://example.org/movies/ontology#birthYear> "1985"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/person/TimotheeChalamet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#releaseYear> "2016"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#bornIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/LilyGladstone> <http://example.org/movies/ontology#birthYear> "1986"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/BladeRunner2049> <http://purl.org/dc/terms/title> "Blade Runner 2049"@en .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#imdbRating> "8.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/LeonardoDiCaprio> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/person/HarrisonFord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/ontology#runtimeMinutes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Thriller> .
+<http://example.org/movies/ontology#directedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Syncopy> .
+<http://example.org/movies/person/HarrisonFord> <http://example.org/movies/ontology#birthYear> "1942"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Inception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#Studio> <http://www.w3.org/2000/01/rdf-schema#label> "Studio"@en .
+<http://example.org/movies/genre/Crime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Paramount> .
+<http://example.org/movies/genre/Thriller> <http://www.w3.org/2000/01/rdf-schema#label> "Thriller"@en .
+<http://example.org/movies/film/TheDarkKnight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#imdbRating> "7.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RyanGosling> .
+<http://example.org/movies/person/SaoirseRonan> <http://example.org/movies/ontology#birthYear> "1994"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/TimotheeChalamet> .
+<http://example.org/movies/ontology#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+<http://example.org/movies/person/Zendaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/person/TomHardy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/FilmNation> .
+<http://example.org/movies/person/JonahHill> <http://xmlns.com/foaf/0.1/name> "Jonah Hill" .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Interstellar> <http://purl.org/dc/terms/title> "Interstellar"@en .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Thriller> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/SongKangHo> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/AustinButler> <http://xmlns.com/foaf/0.1/name> "Austin Butler" .
+<http://example.org/movies/person/EmilyBlunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/EmmaStone> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Legendary> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/studio/Atlas> <http://www.w3.org/2000/01/rdf-schema#label> "Atlas Entertainment" .
+<http://example.org/movies/ontology#producedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/country/UK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/RyanGosling> <http://xmlns.com/foaf/0.1/name> "Ryan Gosling" .
+<http://example.org/movies/person/LeonardoDiCaprio> <http://xmlns.com/foaf/0.1/name> "Leonardo DiCaprio" .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/FlorencePugh> .
+<http://example.org/movies/person/LeonardoDiCaprio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Syncopy> .
+<http://example.org/movies/person/ChristianBale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/DenisVilleneuve> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#releaseYear> "2017"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#birthYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/RebeccaFerguson> <http://xmlns.com/foaf/0.1/name> "Rebecca Ferguson" .
+<http://example.org/movies/person/JeanPierreJeunet> <http://example.org/movies/ontology#birthYear> "1953"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/JessicaChastain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#runtimeMinutes> "163"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/RobertDeNiro> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/genre/Comedy> <http://www.w3.org/2000/01/rdf-schema#label> "Comedy"@en .
+<http://example.org/movies/person/JonahHill> <http://example.org/movies/ontology#birthYear> "1983"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/MartinScorsese> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/ontology#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/movies/ontology#Person> .
+<http://example.org/movies/person/ChristianBale> <http://example.org/movies/ontology#birthYear> "1974"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/WarnerBros> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RebeccaFerguson> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/AustinButler> .
+<http://example.org/movies/country/Italy> <http://www.w3.org/2000/01/rdf-schema#label> "Italy"@en .
+<http://example.org/movies/person/MargotRobbie> <http://xmlns.com/foaf/0.1/name> "Margot Robbie" .
+<http://example.org/movies/genre/Adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/person/RebeccaFerguson> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Sweden> .
+<http://example.org/movies/person/GretaGerwig> <http://xmlns.com/foaf/0.1/name> "Greta Gerwig" .
+<http://example.org/movies/genre/Crime> <http://www.w3.org/2000/01/rdf-schema#label> "Crime"@en .
+<http://example.org/movies/studio/Summit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/country/Sweden> <http://www.w3.org/2000/01/rdf-schema#label> "Sweden"@en .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/CillianMurphy> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#runtimeMinutes> "180"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/RobertDeNiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/JeremyRenner> .
+<http://example.org/movies/film/BladeRunner2049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/MargotRobbie> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/ChoiWooShik> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/BongJoonHo> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/MatthewMcConaughey> .
+<http://example.org/movies/film/DunePartTwo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/studio/FilmNation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/genre/SciFi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/ontology#directedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/country/USA> <http://www.w3.org/2000/01/rdf-schema#label> "United States"@en .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RobertDeNiro> .
+<http://example.org/movies/studio/Paramount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/person/ChristopherNolan> <http://xmlns.com/foaf/0.1/name> "Christopher Nolan" .
+<http://example.org/movies/studio/Barunson> <http://www.w3.org/2000/01/rdf-schema#label> "Barunson E&A" .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#releaseYear> "2023"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/RyanGosling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/ChristopherNolan> <http://example.org/movies/ontology#birthYear> "1970"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+<http://example.org/movies/ontology#producedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/studio/Legendary> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/country/SouthKorea> <http://www.w3.org/2000/01/rdf-schema#label> "South Korea"@en .
+<http://example.org/movies/film/LittleWomen> <http://purl.org/dc/terms/title> "Little Women"@en .
+<http://example.org/movies/person/MattDamon> <http://example.org/movies/ontology#birthYear> "1970"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://purl.org/dc/terms/title> "The Wolf of Wall Street"@en .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/MartinScorsese> .
+<http://example.org/movies/person/SaoirseRonan> <http://xmlns.com/foaf/0.1/name> "Saoirse Ronan" .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/person/JeremyRenner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/MargotRobbie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/AnneHathaway> <http://xmlns.com/foaf/0.1/name> "Anne Hathaway" .
+<http://example.org/movies/person/AmyAdams> <http://xmlns.com/foaf/0.1/name> "Amy Adams" .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Atlas> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Comedy> .
+<http://example.org/movies/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/actor> .
+<http://example.org/movies/person/CillianMurphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/studio/FilmNation> <http://www.w3.org/2000/01/rdf-schema#label> "FilmNation Entertainment" .
+<http://example.org/movies/studio/Columbia> <http://www.w3.org/2000/01/rdf-schema#label> "Columbia Pictures" .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#runtimeMinutes> "116"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#runtimeMinutes> "180"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/TomHardy> <http://xmlns.com/foaf/0.1/name> "Tom Hardy" .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#releaseYear> "2008"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/SaoirseRonan> .
+<http://example.org/movies/ontology#birthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Adventure> .
+<http://example.org/movies/person/GretaGerwig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/person/HeathLedger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/LaLaLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/WarnerBros> .
+<http://example.org/movies/person/DenisVilleneuve> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Canada> .
+<http://example.org/movies/person/Zendaya> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/AppianWay> .
+<http://example.org/movies/studio/AppianWay> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Legendary> .
+<http://example.org/movies/film/Oppenheimer> <http://purl.org/dc/terms/title> "Oppenheimer"@en .
+<http://example.org/movies/person/LilyGladstone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/DenisVilleneuve> <http://example.org/movies/ontology#birthYear> "1967"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Legendary> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/TomHardy> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#imdbRating> "8.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/JosephGordonLevitt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#imdbRating> "8.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/RobertDowneyJr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Columbia> .
+<http://example.org/movies/person/ChoiWooShik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/LeonardoDiCaprio> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/France> .
+<http://example.org/movies/studio/Syncopy> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/person/ChristianBale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/TimotheeChalamet> <http://xmlns.com/foaf/0.1/name> "Timothée Chalamet" .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/HarrisonFord> .
+<http://example.org/movies/ontology#basedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/ontology#Studio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/ontology#Film> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Movie> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/person/EmilyBlunt> <http://example.org/movies/ontology#birthYear> "1983"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/ChristianBale> <http://xmlns.com/foaf/0.1/name> "Christian Bale" .
+<http://example.org/movies/studio/Atlas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/studio/Columbia> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/Zendaya> .
+<http://example.org/movies/studio/Alcon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/person/RyanGosling> <http://example.org/movies/ontology#birthYear> "1980"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/ClaudieOssard> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/France> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Heyday> .
+<http://example.org/movies/studio/FilmNation> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/ontology#hasGenre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/genre> .
+<http://example.org/movies/country/UK> <http://www.w3.org/2000/01/rdf-schema#label> "United Kingdom"@en .
+<http://example.org/movies/person/ChoiWooShik> <http://xmlns.com/foaf/0.1/name> "Choi Woo-shik" .
+<http://example.org/movies/country/Italy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Crime> .
+<http://example.org/movies/person/DenisVilleneuve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/studio/ClaudieOssard> <http://www.w3.org/2000/01/rdf-schema#label> "Claudie Ossard Productions" .
+<http://example.org/movies/studio/Syncopy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#releaseYear> "2019"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/genre/Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Legendary> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/SciFi> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#imdbRating> "6.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Arrival> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/person/MartinScorsese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/genre/Musical> <http://www.w3.org/2000/01/rdf-schema#label> "Musical"@en .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/ChristopherNolan> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/MargotRobbie> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Drama> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Syncopy> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/ChristopherNolan> .
+<http://example.org/movies/film/Amelie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/person/SaoirseRonan> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/DenisVilleneuve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/person/BongJoonHo> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/SouthKorea> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/SouthKorea> .
+<http://example.org/movies/person/JeremyRenner> <http://example.org/movies/ontology#birthYear> "1971"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/ontology#producedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/RebeccaFerguson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Adventure> .
+<http://example.org/movies/person/MargotRobbie> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Australia> .
+<http://example.org/movies/ontology#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/studio/ClaudieOssard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/ontology#hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#releaseYear> "2019"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/Syncopy> <http://www.w3.org/2000/01/rdf-schema#label> "Syncopy" .
+<http://example.org/movies/ontology#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/ontology#bornIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Person> .
+<http://example.org/movies/person/SongKangHo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/JeremyRenner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/RobertDeNiro> <http://example.org/movies/ontology#birthYear> "1943"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/country/Australia> <http://www.w3.org/2000/01/rdf-schema#label> "Australia"@en .
+<http://example.org/movies/person/JessicaChastain> <http://xmlns.com/foaf/0.1/name> "Jessica Chastain" .
+<http://example.org/movies/person/MargotRobbie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/LilyGladstone> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/SaoirseRonan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/person/LeonardoDiCaprio> <http://example.org/movies/ontology#birthYear> "1974"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Parasite> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Comedy> .
+<http://example.org/movies/film/LittleWomen> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Romance> .
+<http://example.org/movies/person/JeremyRenner> <http://xmlns.com/foaf/0.1/name> "Jeremy Renner" .
+<http://example.org/movies/studio/AppleStudios> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/DenisVilleneuve> .
+<http://example.org/movies/ontology#basedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/AudreyTautou> <http://xmlns.com/foaf/0.1/name> "Audrey Tautou" .
+<http://example.org/movies/studio/WarnerBros> <http://www.w3.org/2000/01/rdf-schema#label> "Warner Bros. Pictures" .
+<http://example.org/movies/genre/Adventure> <http://www.w3.org/2000/01/rdf-schema#label> "Adventure"@en .
+<http://example.org/movies/film/LittleWomen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#runtimeMinutes> "152"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#runtimeMinutes> "169"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/HeathLedger> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Australia> .
+<http://example.org/movies/genre/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<http://example.org/movies/ontology#directedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/director> .
+<http://example.org/movies/person/HeathLedger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/studio/Barunson> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/SouthKorea> .
+<http://example.org/movies/person/HeathLedger> <http://example.org/movies/ontology#birthYear> "1979"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/LilyGladstone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/AnneHathaway> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/MartinScorsese> .
+<http://example.org/movies/person/TimotheeChalamet> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/genre/Biographical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/person/JeanPierreJeunet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/ontology#bornIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/film/Oppenheimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/DenisVilleneuve> .
+<http://example.org/movies/country/Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Ireland"@en .
+<http://example.org/movies/person/JosephGordonLevitt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/RobertDowneyJr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/ontology#releaseYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/person/AudreyTautou> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/France> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/ChristianBale> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#releaseYear> "2013"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/TimotheeChalamet> <http://example.org/movies/ontology#birthYear> "1995"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/LilyGladstone> <http://xmlns.com/foaf/0.1/name> "Lily Gladstone" .
+<http://example.org/movies/genre/Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/person/MattDamon> <http://xmlns.com/foaf/0.1/name> "Matt Damon" .
+<http://example.org/movies/genre/Drama> <http://www.w3.org/2000/01/rdf-schema#label> "Drama"@en .
+<http://example.org/movies/person/TomHardy> <http://example.org/movies/ontology#birthYear> "1977"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/FlorencePugh> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/Arrival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#releaseYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/movies/film/DunePartTwo> <http://purl.org/dc/terms/title> "Dune: Part Two"@en .
+<http://example.org/movies/person/ChristopherNolan> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/EmilyBlunt> .
+<http://example.org/movies/person/TimotheeChalamet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Parasite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/AudreyTautou> .
+<http://example.org/movies/person/GretaGerwig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/TomHardy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#runtimeMinutes> "155"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/AppianWay> <http://www.w3.org/2000/01/rdf-schema#label> "Appian Way" .
+<http://example.org/movies/person/JeanPierreJeunet> <http://xmlns.com/foaf/0.1/name> "Jean-Pierre Jeunet" .
+<http://example.org/movies/ontology#imdbRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/EmilyBlunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/ontology#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/person/DamienChazelle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/LeonardoDiCaprio> .
+<http://example.org/movies/person/FlorencePugh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/country/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/AnneHathaway> <http://example.org/movies/ontology#birthYear> "1982"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/LeonardoDiCaprio> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/ChristopherNolan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Thriller> .
+<http://example.org/movies/studio/Alcon> <http://www.w3.org/2000/01/rdf-schema#label> "Alcon Entertainment" .
+<http://example.org/movies/person/FlorencePugh> <http://xmlns.com/foaf/0.1/name> "Florence Pugh" .
+<http://example.org/movies/ontology#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/movies/person/MatthewMcConaughey> <http://xmlns.com/foaf/0.1/name> "Matthew McConaughey" .
+<http://example.org/movies/person/ChoiWooShik> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/SouthKorea> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/country/France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/ontology#Genre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Thing> .
+<http://example.org/movies/person/MattDamon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/JessicaChastain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/country/France> <http://www.w3.org/2000/01/rdf-schema#label> "France"@en .
+<http://example.org/movies/genre/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Genre> .
+<http://example.org/movies/ontology#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/person/AudreyTautou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/genre/SciFi> <http://www.w3.org/2000/01/rdf-schema#label> "Science Fiction"@en .
+<http://example.org/movies/studio/Summit> <http://www.w3.org/2000/01/rdf-schema#label> "Summit Entertainment" .
+<http://example.org/movies/studio/Paramount> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/AustinButler> <http://example.org/movies/ontology#birthYear> "1991"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/AmyAdams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/RebeccaFerguson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/WarnerBros> .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RyanGosling> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/DamienChazelle> .
+<http://example.org/movies/studio/Legendary> <http://www.w3.org/2000/01/rdf-schema#label> "Legendary Pictures" .
+<http://example.org/movies/ontology#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Columbia> .
+<http://example.org/movies/person/ChristopherNolan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/person/LeonardoDiCaprio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Actor> .
+<http://example.org/movies/film/TheDarkKnight> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/WarnerBros> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Summit> .
+<http://example.org/movies/ontology#Film> <http://www.w3.org/2000/01/rdf-schema#label> "Film"@en .
+<http://example.org/movies/person/JosephGordonLevitt> <http://xmlns.com/foaf/0.1/name> "Joseph Gordon-Levitt" .
+<http://example.org/movies/ontology#imdbRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#runtimeMinutes> "128"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/SongKangHo> <http://xmlns.com/foaf/0.1/name> "Song Kang-ho" .
+<http://example.org/movies/country/Sweden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Country> .
+<http://example.org/movies/person/JessicaChastain> <http://example.org/movies/ontology#birthYear> "1977"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/RobertDeNiro> <http://xmlns.com/foaf/0.1/name> "Robert De Niro" .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Crime> .
+<http://example.org/movies/film/TheDarkKnight> <http://purl.org/dc/terms/title> "The Dark Knight"@en .
+<http://example.org/movies/person/BongJoonHo> <http://xmlns.com/foaf/0.1/name> "Bong Joon-ho" .
+<http://example.org/movies/person/AnneHathaway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/AmyAdams> <http://example.org/movies/ontology#birthYear> "1974"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/RobertDowneyJr> .
+<http://example.org/movies/ontology#hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://purl.org/dc/terms/title> "Killers of the Flower Moon"@en .
+<http://example.org/movies/person/HeathLedger> <http://xmlns.com/foaf/0.1/name> "Heath Ledger" .
+<http://example.org/movies/film/Barbie> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Comedy> .
+<http://example.org/movies/film/Dune> <http://purl.org/dc/terms/title> "Dune"@en .
+<http://example.org/movies/person/FlorencePugh> <http://example.org/movies/ontology#birthYear> "1996"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/MartinScorsese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/EmmaStone> <http://xmlns.com/foaf/0.1/name> "Emma Stone" .
+<http://example.org/movies/studio/Summit> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/EmmaStone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#releaseYear> "2021"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Parasite> <http://purl.org/dc/terms/title> "Parasite"@en .
+<http://example.org/movies/studio/Barunson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/studio/Legendary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Studio> .
+<http://example.org/movies/ontology#imdbRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/movies/person/JonahHill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/BongJoonHo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/JeanPierreJeunet> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/France> .
+<http://example.org/movies/country/Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@en .
+<http://example.org/movies/film/KillersOfTheFlowerMoon> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/LilyGladstone> .
+<http://example.org/movies/studio/WarnerBros> <http://example.org/movies/ontology#basedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/person/RyanGosling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/person/Zendaya> <http://xmlns.com/foaf/0.1/name> "Zendaya" .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#runtimeMinutes> "166"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/person/BongJoonHo> <http://example.org/movies/ontology#birthYear> "1969"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#releaseYear> "2014"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/genre/Romance> <http://www.w3.org/2000/01/rdf-schema#label> "Romance"@en .
+<http://example.org/movies/film/Inception> <http://example.org/movies/ontology#producedBy> <http://example.org/movies/studio/Syncopy> .
+<http://example.org/movies/film/Oppenheimer> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/MattDamon> .
+<http://example.org/movies/studio/AppleStudios> <http://www.w3.org/2000/01/rdf-schema#label> "Apple Studios" .
+<http://example.org/movies/ontology#releaseYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/studio/Heyday> <http://www.w3.org/2000/01/rdf-schema#label> "Heyday Films" .
+<http://example.org/movies/person/JeremyRenner> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/UK> .
+<http://example.org/movies/person/BongJoonHo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Director> .
+<http://example.org/movies/film/Interstellar> <http://example.org/movies/ontology#imdbRating> "8.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/SongKangHo> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/SouthKorea> .
+<http://example.org/movies/film/Amelie> <http://example.org/movies/ontology#directedBy> <http://example.org/movies/person/JeanPierreJeunet> .
+<http://example.org/movies/person/MatthewMcConaughey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.org/movies/film/BladeRunner2049> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/TheWolfOfWallStreet> <http://example.org/movies/ontology#hasGenre> <http://example.org/movies/genre/Biographical> .
+<http://example.org/movies/person/JosephGordonLevitt> <http://example.org/movies/ontology#birthYear> "1981"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/LaLaLand> <http://example.org/movies/ontology#imdbRating> "8.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/movies/person/RyanGosling> <http://example.org/movies/ontology#bornIn> <http://example.org/movies/country/Canada> .
+<http://example.org/movies/film/DunePartTwo> <http://example.org/movies/ontology#producedIn> <http://example.org/movies/country/USA> .
+<http://example.org/movies/film/Dune> <http://example.org/movies/ontology#hasActor> <http://example.org/movies/person/Zendaya> .
+<http://example.org/movies/ontology#producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/movies/ontology#Film> .
+<http://example.org/movies/ontology#producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://schema.org/productionCompany> .
+<http://example.org/movies/person/MatthewMcConaughey> <http://example.org/movies/ontology#birthYear> "1969"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/movies/film/Barbie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/movies/ontology#Film> .

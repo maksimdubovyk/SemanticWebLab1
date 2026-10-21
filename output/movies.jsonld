@@ -1,0 +1,2624 @@
+[
+  {
+    "@id": "http://example.org/movies/ontology#directedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Director"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://schema.org/director"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/TomHardy",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1977
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Tom Hardy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/TheWolfOfWallStreet",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/MartinScorsese"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/LeonardoDiCaprio"
+      },
+      {
+        "@id": "http://example.org/movies/person/JonahHill"
+      },
+      {
+        "@id": "http://example.org/movies/person/MargotRobbie"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Biographical"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Crime"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Comedy"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.2"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/AppianWay"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2013
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 180
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "The Wolf of Wall Street"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Comedy",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Comedy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/KillersOfTheFlowerMoon",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/MartinScorsese"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/LeonardoDiCaprio"
+      },
+      {
+        "@id": "http://example.org/movies/person/RobertDeNiro"
+      },
+      {
+        "@id": "http://example.org/movies/person/LilyGladstone"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Crime"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "7.6"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/AppleStudios"
+      },
+      {
+        "@id": "http://example.org/movies/studio/AppianWay"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2023
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 206
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Killers of the Flower Moon"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/DenisVilleneuve",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1967
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Canada"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Denis Villeneuve"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/LeonardoDiCaprio",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1974
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Leonardo DiCaprio"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/LittleWomen",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/GretaGerwig"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/SaoirseRonan"
+      },
+      {
+        "@id": "http://example.org/movies/person/FlorencePugh"
+      },
+      {
+        "@id": "http://example.org/movies/person/TimotheeChalamet"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Romance"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "7.8"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Columbia"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2019
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 135
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Little Women"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/JeremyRenner",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1971
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Jeremy Renner"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/TimotheeChalamet",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1995
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Timothée Chalamet"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/Canada",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Canada"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#bornIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#releaseYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/Zendaya",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1996
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Zendaya"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Thriller",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Thriller"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/EmilyBlunt",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1983
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Emily Blunt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/AmyAdams",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1974
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Italy"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Amy Adams"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#birthYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Drama",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Drama"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/MartinScorsese",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1942
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Martin Scorsese"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/RebeccaFerguson",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1983
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Sweden"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Rebecca Ferguson"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#basedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Arrival",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/DenisVilleneuve"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/AmyAdams"
+      },
+      {
+        "@id": "http://example.org/movies/person/JeremyRenner"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "7.9"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/FilmNation"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2016
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 116
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Arrival"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/BongJoonHo",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1969
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/SouthKorea"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Bong Joon-ho"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/WarnerBros",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Warner Bros. Pictures"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Action",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Action"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Oppenheimer",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/ChristopherNolan"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/CillianMurphy"
+      },
+      {
+        "@id": "http://example.org/movies/person/EmilyBlunt"
+      },
+      {
+        "@id": "http://example.org/movies/person/RobertDowneyJr"
+      },
+      {
+        "@id": "http://example.org/movies/person/MattDamon"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Biographical"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.3"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Syncopy"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Atlas"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      },
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2023
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 180
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Oppenheimer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/MattDamon",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1970
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Matt Damon"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Columbia",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Columbia Pictures"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Parasite",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/BongJoonHo"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/SongKangHo"
+      },
+      {
+        "@id": "http://example.org/movies/person/ChoiWooShik"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Thriller"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Comedy"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.5"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Barunson"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/SouthKorea"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2019
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 132
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Parasite"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/EmmaStone",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1988
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Emma Stone"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/FlorencePugh",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1996
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Florence Pugh"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/ChristopherNolan",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1970
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Christopher Nolan"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/ChoiWooShik",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1990
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/SouthKorea"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Choi Woo-shik"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/Ireland",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Ireland"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Director",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Director"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/movies/ontology#Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/ChristianBale",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1974
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Christian Bale"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/Italy",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Italy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Adventure",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Adventure"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/JonahHill",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1983
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Jonah Hill"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/AnneHathaway",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1982
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Anne Hathaway"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Actor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/movies/ontology#Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/HarrisonFord",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1942
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Harrison Ford"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#hasActor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://schema.org/actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Amelie",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/JeanPierreJeunet"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/AudreyTautou"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Comedy"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Romance"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.3"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/ClaudieOssard"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/France"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2001
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 122
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Amélie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/LaLaLand",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/DamienChazelle"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/RyanGosling"
+      },
+      {
+        "@id": "http://example.org/movies/person/EmmaStone"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Musical"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Romance"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.0"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Summit"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2016
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 128
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "La La Land"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/DunePartTwo",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/DenisVilleneuve"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/TimotheeChalamet"
+      },
+      {
+        "@id": "http://example.org/movies/person/Zendaya"
+      },
+      {
+        "@id": "http://example.org/movies/person/RebeccaFerguson"
+      },
+      {
+        "@id": "http://example.org/movies/person/AustinButler"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Adventure"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.5"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Legendary"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2024
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 166
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Dune: Part Two"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Paramount",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Paramount Pictures"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Interstellar",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/ChristopherNolan"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/MatthewMcConaughey"
+      },
+      {
+        "@id": "http://example.org/movies/person/AnneHathaway"
+      },
+      {
+        "@id": "http://example.org/movies/person/JessicaChastain"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Drama"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Adventure"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.7"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Paramount"
+      },
+      {
+        "@id": "http://example.org/movies/studio/WarnerBros"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Legendary"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Syncopy"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      },
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2014
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 169
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Interstellar"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#producedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://schema.org/countryOfOrigin"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/Australia",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Australia"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/TheDarkKnight",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/ChristopherNolan"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/ChristianBale"
+      },
+      {
+        "@id": "http://example.org/movies/person/HeathLedger"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Action"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Crime"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Thriller"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "9.0"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/WarnerBros"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Legendary"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Syncopy"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      },
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2008
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 152
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "The Dark Knight"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/LilyGladstone",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1986
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Lily Gladstone"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Crime",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Crime"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/Sweden",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sweden"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/SciFi",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Science Fiction"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#imdbRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#producedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://schema.org/productionCompany"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Dune",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/DenisVilleneuve"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/TimotheeChalamet"
+      },
+      {
+        "@id": "http://example.org/movies/person/Zendaya"
+      },
+      {
+        "@id": "http://example.org/movies/person/RebeccaFerguson"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Adventure"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.0"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Legendary"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2021
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 155
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Dune"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/SongKangHo",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1967
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/SouthKorea"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Song Kang-ho"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/AppleStudios",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Apple Studios"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#hasGenre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/movies/ontology#Genre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "https://schema.org/genre"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Syncopy",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Syncopy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/SaoirseRonan",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1994
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Saoirse Ronan"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Legendary",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Legendary Pictures"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/HeathLedger",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1979
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Australia"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Heath Ledger"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Inception",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/ChristopherNolan"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/LeonardoDiCaprio"
+      },
+      {
+        "@id": "http://example.org/movies/person/JosephGordonLevitt"
+      },
+      {
+        "@id": "http://example.org/movies/person/TomHardy"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Action"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Thriller"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.8"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/WarnerBros"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Legendary"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Syncopy"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      },
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2010
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 148
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Inception"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/SouthKorea",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "South Korea"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#runtimeMinutes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/movies/ontology#Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/ClaudieOssard",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/France"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Claudie Ossard Productions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Summit",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Summit Entertainment"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/DamienChazelle",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1985
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Damien Chazelle"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/AustinButler",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1991
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Austin Butler"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Musical",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Musical"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/RobertDeNiro",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1943
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Robert De Niro"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/France",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "France"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/UK",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "United Kingdom"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/RyanGosling",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1980
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Canada"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Ryan Gosling"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/JosephGordonLevitt",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1981
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Joseph Gordon-Levitt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Heyday",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/UK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Heyday Films"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/RobertDowneyJr",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1965
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Robert Downey Jr."
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Film",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Film"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Movie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/JessicaChastain",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1977
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Jessica Chastain"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/BladeRunner2049",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/DenisVilleneuve"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/RyanGosling"
+      },
+      {
+        "@id": "http://example.org/movies/person/HarrisonFord"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/SciFi"
+      },
+      {
+        "@id": "http://example.org/movies/genre/Thriller"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8.0"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Alcon"
+      },
+      {
+        "@id": "http://example.org/movies/studio/Columbia"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2017
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 163
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Blade Runner 2049"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/MargotRobbie",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1990
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Australia"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Margot Robbie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/CillianMurphy",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1976
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/Ireland"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Cillian Murphy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/MatthewMcConaughey",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1969
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Matthew McConaughey"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Genre",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Genre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Thing"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/film/Barbie",
+    "@type": [
+      "http://example.org/movies/ontology#Film"
+    ],
+    "http://example.org/movies/ontology#directedBy": [
+      {
+        "@id": "http://example.org/movies/person/GretaGerwig"
+      }
+    ],
+    "http://example.org/movies/ontology#hasActor": [
+      {
+        "@id": "http://example.org/movies/person/MargotRobbie"
+      },
+      {
+        "@id": "http://example.org/movies/person/RyanGosling"
+      }
+    ],
+    "http://example.org/movies/ontology#hasGenre": [
+      {
+        "@id": "http://example.org/movies/genre/Comedy"
+      }
+    ],
+    "http://example.org/movies/ontology#imdbRating": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "6.8"
+      }
+    ],
+    "http://example.org/movies/ontology#producedBy": [
+      {
+        "@id": "http://example.org/movies/studio/Heyday"
+      }
+    ],
+    "http://example.org/movies/ontology#producedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://example.org/movies/ontology#releaseYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2023
+      }
+    ],
+    "http://example.org/movies/ontology#runtimeMinutes": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 114
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Barbie"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Barunson",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/SouthKorea"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Barunson E&A"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/GretaGerwig",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1983
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Greta Gerwig"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Romance",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Romance"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/AudreyTautou",
+    "@type": [
+      "http://example.org/movies/ontology#Actor",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1976
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/France"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Audrey Tautou"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/country/USA",
+    "@type": [
+      "http://example.org/movies/ontology#Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "United States"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/ontology#Studio",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Studio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://schema.org/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/AppianWay",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Appian Way"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/genre/Biographical",
+    "@type": [
+      "http://example.org/movies/ontology#Genre"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Biographical"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/FilmNation",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "FilmNation Entertainment"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Alcon",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Alcon Entertainment"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/person/JeanPierreJeunet",
+    "@type": [
+      "http://example.org/movies/ontology#Director",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://example.org/movies/ontology#birthYear": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1953
+      }
+    ],
+    "http://example.org/movies/ontology#bornIn": [
+      {
+        "@id": "http://example.org/movies/country/France"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Jean-Pierre Jeunet"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/movies/studio/Atlas",
+    "@type": [
+      "http://example.org/movies/ontology#Studio"
+    ],
+    "http://example.org/movies/ontology#basedIn": [
+      {
+        "@id": "http://example.org/movies/country/USA"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Atlas Entertainment"
+      }
+    ]
+  }
+]
